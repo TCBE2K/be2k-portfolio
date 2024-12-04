@@ -11,7 +11,7 @@ got("https://avatars.githubusercontent.com/u/148815537?v=4", {
     return terminalImage.buffer(image.body, { width: "33%" });
   })
   .then(function (image) {
-    print("\n");
+    console.log("\n");
     console.log(image);
 
     console.log(chalk.bgGreen("I am " + chalk.bold(chalk.cyan("BE2K\n"))));
